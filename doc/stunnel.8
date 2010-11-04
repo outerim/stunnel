@@ -642,6 +642,9 @@ certificate is accepted regardless of its Common Name.  For this reason a
 dedicated \s-1CA\s0 should be used with level 2, and not a generic \s-1CA\s0 commonly used
 for webservers.  Level 3 is preferred for point-to-point connections.
 .RE
+.IP "\fBxforwardedproto\fR = yes | no" 4
+.IX Item "xforwardedproto = yes | no"
+append an 'X-Forwarded-Proto: https' HTTP request header.
 .SH "RETURN VALUE"
 .IX Header "RETURN VALUE"
 \&\fBstunnel\fR returns zero on success, non-zero on error.
